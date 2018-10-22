@@ -27,3 +27,13 @@ maskedImage(~BW) = 0;
 
 B = bwmorph(BW,'clean');
 imshow(B);
+
+
+
+% When considering 4 Traffic Lights, we assign traffic density there, to be A,B,C,D respectively.
+% Assuming total time allotted to the 4 Signals combined is T seconds.
+%Traffic density is calculated by taking into account the area in pixels that the cars waiting in front of that particular signal occupy
+% Time allotted to Signal A would be (A*T)/(A+B+C+D) seconds.
+% Time allotted to Signal B would be (B*T)/(A+B+C+D) seconds.
+% Time allotted to Signal C would be (C*T)/(A+B+C+D) seconds.
+% Time allotted to Signal D would be (D*T)/(A+B+C+D) seconds.
