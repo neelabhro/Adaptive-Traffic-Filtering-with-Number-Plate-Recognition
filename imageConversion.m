@@ -50,3 +50,11 @@ Density = W_Area / B_Area
 %This would roughly give us the proportion of the area, the cars are
 %occupying in the image, as after the above operations, they are of pixel
 %value 1
+
+% When considering 4 Traffic Lights, we assign traffic density there, to be A,B,C,D respectively.
+% Assuming total time allotted to the 4 Signals combined is T seconds.
+%Traffic density is calculated by taking into account the area in pixels that the cars waiting in front of that particular signal occupy.
+% Time allotted to Signal A would be (A*T)/(A+B+C+D) seconds.
+% Time allotted to Signal B would be (B*T)/(A+B+C+D) seconds.
+% Time allotted to Signal C would be (C*T)/(A+B+C+D) seconds.
+% Time allotted to Signal D would be (D*T)/(A+B+C+D) seconds.
