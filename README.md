@@ -20,12 +20,36 @@ The following image processing algorithms are followed, and the resultant image 
 8. Image Dilation
 9. Density Calculations
 
-The background image for clean subtraction is:
+### Bckground image for clean subtraction is:
 ![](Number%20Plate/background.jpg)
 
-The Binarized Image after operations is:
+### Binarized Image after operations is:
 ![](filtered1.png)
 
-The Final Output Image for density calculations is:
+### Final Output Image for density calculations is:
 ![](Number%20Plate/density.jpg)
+
+## How the Car Number Plate Detection and Recognition Algorithm works
+1. Taking Image Input
+2. Binarize the Input Image
+3. Thresholding
+4. Edge Detection (Taking into account that the column with the most number of Black Pixels is the edge in the Input Image)
+5. Removal of detected edges from the image by cropping
+6. Character Detection using Point Detection ( As soon as a Black Pixel arrives while itirating, it indiactes that a character has been detected and column wise scanning starts.)
+7. Edge detection (We then move on to detect a completely white column to mark the end of the character.)
+8. Storage of array of Row Numbers where Black Pixels are obtained.
+9. Obtaining Character width and ommitting characters with widths below a certain threshold to remove false positives.
+10. Inverting the Dataset Imgages for Character recognition.
+11. Resizing the dataset images to suit our character images.
+12. Comparison of the 42x24 = 1008 pixels of the images using pixel to pixel mapping.(The character would have the maximum overlap with it's dataset image ideally)
+13. Assigning Dataset image name/ number to the character.
+14. Obtaining the final detected characters.
+
+### Sample Dataset Image
+![](Number%20Plate/carplate2.jpg)
+
+![](Number%20Plate/binaryN.jpg)
+
+### Obtained Sample Character
+![](Number%20Plate/Samplechar.jpg)
 
