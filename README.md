@@ -7,3 +7,5 @@ The ever growing number of vehicles on roads, has been a problem in India since 
 - Collection of Training Data ( with visible Vehicular congestion) for our Algorithms, which would involve detection of Vehicular Clusters standing before the defaulting marks of Red Light
 - Algorithm for Number Plate detection of defaulting vehicles through Image Retargeting.
 - Algorithm for efficient and Adaptive Time Allotment to traffic signals in accordance with the vehicular congestion before the signal.
+
+![](filtered1.png)
