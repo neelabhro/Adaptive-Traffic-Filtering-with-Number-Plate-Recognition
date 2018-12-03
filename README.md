@@ -8,4 +8,15 @@ The ever growing number of vehicles on roads, has been a problem in India since 
 - Algorithm for Number Plate detection of defaulting vehicles through Image Retargeting.
 - Algorithm for efficient and Adaptive Time Allotment to traffic signals in accordance with the vehicular congestion before the signal.
 
+## How Adaptive Traffic Filtering works
+The following image processing algorithms are followed, and the resultant image is as shown below:
+1. Input Image
+2. Grayscale and Binary Conversion
+3. Adaptive Background Subtraction
+4. Histogram Equalisation
+5. Thresholding
+6. Edge Detection using Sobel
+7. Cleaning up the Image Borders
+8. Image Dilation
+
 ![](filtered1.png)
