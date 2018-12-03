@@ -48,8 +48,7 @@ The following image processing algorithms are followed, and the resultant image 
 ### Sample Dataset Image
 ![](Number%20Plate/carplate2.jpg)
 
-### Extracted Number Plate
-![](Number%20Plate/binaryN.jpg)
+![](Number%20Plate/BinaryN.jpg)
 
 ### Obtained Sample Character
 ![](Number%20Plate/Samplechar.jpg)
