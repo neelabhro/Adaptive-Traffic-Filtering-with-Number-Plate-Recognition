@@ -19,8 +19,13 @@ The following image processing algorithms are followed, and the resultant image 
 7. Cleaning up the Image Borders
 8. Image Dilation
 9. Density Calculations
+
 The background image for clean subtraction is:
 ![](Number%20Plate/background.jpg)
 
 The Binarized Image after operations is:
 ![](filtered1.png)
+
+The Final Output Image for density calculations is:
+![](Number%20Plate/density.jpg)
+
